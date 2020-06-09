@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tv_ID"
+            android:text="ID:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/Ed_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/Tv_ID"
+            android:layout_toRightOf="@+id/Tv_ID"
+            android:hint="ID"
+            android:inputType="number"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tv_name"
+            android:text="name:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/Ed_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/Tv_name"
+            android:layout_toRightOf="@+id/Tv_name"
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tv_score"
+            android:text="score:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/Ed_score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="國文"
+            android:inputType="number"
+            android:textSize="25sp" />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/Ed_score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="英文"
+            android:inputType="number"
+            android:textSize="25sp" />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/Ed_score3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="數學"
+            android:inputType="number"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_delete"
+            android:layout_weight="1"
+            android:text="刪除"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_edit"
+            android:layout_weight="1"
+            android:text="更新"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:id="@+id/Tv_show"/>
+
+</LinearLayout>
